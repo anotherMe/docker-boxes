@@ -1,4 +1,6 @@
+
 version: '3.7'
+
 services:
     postgresql:
         image: postgres:10-alpine
@@ -10,3 +12,6 @@ services:
             - POSTGRES_PASSWORD=pgpass
         ports:
             - 5432:5432
+
+volumes:
+  postgres_data:
