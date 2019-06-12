@@ -1,0 +1,34 @@
+
+version: '3.7'
+
+services:
+  tomcat:
+    image: tomcat:8.5-jdk8
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    volumes:
+      - catalina_home:/usr/local/tomcat
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Password1
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - db:/var/lib/postgresql/data/pgdata
+
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8089:8080
+
+volumes:
+  catalina_home:
+    driver: local
+  db:
+    driver: local
