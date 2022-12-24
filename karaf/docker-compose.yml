@@ -1,0 +1,20 @@
+
+version: "3.7"
+
+services:
+
+  karaf:
+    image: karaffa:4.4.2
+    expose:
+      - "1099"
+      - "44444"
+      - "8101"
+      - "8181"
+    ports:
+      - "8101:8101"
+      - "1099:1099"
+      - "44444:44444"
+      - "8181:8181"
+    command: karaf
+    stdin_open: true
+    tty: true
