@@ -1,12 +1,10 @@
 
 # Docker-Karaf
 
-Just doing a custom build here, based on the [original image](https://hub.docker.com/r/apache/karaf/tags), in order to add some custom configuration files to the original image.
-
-These are the modified files:
+Compared to the [original image](https://hub.docker.com/r/apache/karaf/tags), we add some custom files:
 
 - `etc/users.properties` to allow SSH access for user *karaf*
-- `org.apache.karaf.management.cfg` to enable remote JMX+RMI access ( you may want to remap the default ports: 1099 and 44444 )
+- `etc/org.apache.karaf.management.cfg` to enable remote JMX+RMI access ( you may want to remap the default ports: 1099 and 44444 )
 
 
 ## Ready... Go
