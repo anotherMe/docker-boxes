@@ -1,0 +1,1 @@
+docker run --name generic-testing-mysql -e MYSQL_ROOT_PASSWORD=secret3! -p 33007:3306 --restart unless-stopped -d mysql:5.7
