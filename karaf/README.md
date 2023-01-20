@@ -1,10 +1,14 @@
 
 # Docker-Karaf
 
-Compared to the [original image](https://hub.docker.com/r/apache/karaf/tags), we add some custom files:
+Compared to the [original image](https://hub.docker.com/r/apache/karaf/tags), we added some custom files:
 
 - `etc/users.properties` to allow SSH access for user *karaf*
 - `etc/org.apache.karaf.management.cfg` to enable remote JMX+RMI access ( you may want to remap the default ports: 1099 and 44444 )
+- `etc/org.apache.karaf.features.cfg` install some features ( actually *decanter*, *decanter-collector-jmx-camel* ) and needed repos
+- `etc/org.apache.karaf.decanter.collector.jmx-camel.cfg` set credentials used to connect to JMX
+
+- `deploy/sample.xml` install a sample application that logs a message every 2 seconds
 
 
 ## Ready... Go
@@ -23,7 +27,9 @@ docker-compose up -d
 
 
 
-## JMX + RMI
+## Connect to JMX
+
+To connect from *VisualVM*, running ho the same host of the docker container:
 
 `service:jmx:rmi://localhost:44444/jndi/rmi://localhost:1099/karaf-root`
 
