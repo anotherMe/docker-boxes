@@ -29,7 +29,7 @@ docker-compose up -d
 
 ## Connect to JMX
 
-To connect from *VisualVM*, running ho the same host of the docker container:
+To connect from *VisualVM*, running on the same host of the docker container:
 
 `service:jmx:rmi://localhost:44444/jndi/rmi://localhost:1099/karaf-root`
 
