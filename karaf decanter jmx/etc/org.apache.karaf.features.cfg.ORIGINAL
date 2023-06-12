@@ -25,8 +25,7 @@ featuresRepositories = \
     mvn:org.apache.karaf.features/enterprise/4.4.2/xml/features, \
     mvn:org.apache.karaf.features/spring/4.4.2/xml/features, \
     mvn:org.apache.karaf.features/standard/4.4.2/xml/features, \
-    mvn:org.apache.karaf.features/framework/4.4.2/xml/features, \
-    mvn:org.apache.camel.karaf/apache-camel/3.20.0/xml/features
+    mvn:org.apache.karaf.features/framework/4.4.2/xml/features
 
 #
 # Comma separated list of features to install at startup
@@ -49,10 +48,7 @@ featuresBoot = \
     wrap/2.6.12, \
     bundle/4.4.2, \
     config/4.4.2, \
-    kar/4.4.2, \
-    deployer, \ 
-    camel-blueprint, \ 
-    aries-blueprint
+    kar/4.4.2
 
 #
 # Resource repositories (OBR) that the features resolver can use
