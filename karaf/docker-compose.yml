@@ -4,7 +4,7 @@ version: "3.7"
 services:
 
   karaf:
-    image: karaffa:4.4.2
+    image: guastada:4.4.2
     expose:
       - "1099"
       - "44444"

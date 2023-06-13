@@ -1,2 +1,2 @@
 
-docker build --no-cache -t karaffa:4.4.2 .
+docker build --no-cache -t guastada:4.4.2 .
