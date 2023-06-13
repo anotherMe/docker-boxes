@@ -6,44 +6,33 @@ My collection of **Dockerfile** and **docker-compose.yml** .
 
 cAdvisor container - Analyzes resource usage and performance characteristics of running containers.
 
-See [github](https://github.com/google/cadvisor) for more info.
-
 ## kafka
 
-Compose file including services:
-
-* Kafka
-* Zookeeper
-* [Kafdrop](https://github.com/obsidiandynamics/kafdrop)
+Kafka service also including services Zookeeper and [Kafdrop](https://github.com/obsidiandynamics/kafdrop)
 
 ## kafka jmx
 
-Same as the previous box but with JMX configured for remote access.
-
-## mysql
-
-
-
-## postgres10
-
-Alpine based container with PostgreSQL version 10.
+Same as the previous box but with **JMX** configured for remote access.
 
 ## owncloud
 
-*Owncloud* container with separate *mariadb* and *redis* containers, as per [this guide](https://doc.owncloud.com/server/admin_manual/installation/docker/).
+*Owncloud* container with separate *mariadb* and *redis* containers.
 
+## postgres10
 
+Alpine based container with *PostgreSQL version 10*.
 
 ## taiga
 
 [Taiga](https://taiga.io/) is a project management platform for agile developers & designers and project managers who want a beautiful tool that makes work truly enjoyable.
 
-Pay attention to the **TAIGA_HOST** parameter:
+## tomcat85
 
-- Taiga image sets up a virtual host (eg: taiga.lan) and you'll need to modify your DNS or your hosts file accordingly
+*Tomcat 8.5* service with *PostgreSQL latest* service
 
-- if you expose your container on a different port than port 80, you need to modify TAIGA_HOST parameter accordingly ( eg: TAIGA_HOST=taiga.lan:8084 )
+## wordpress
 
+*Wordpress* latest with *MySQL 5.7*
 
 ## MISC
 

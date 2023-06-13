@@ -2,6 +2,7 @@
 version: '3.7'
 
 services:
+
   tomcat:
     image: tomcat:8.5-jdk8
     restart: always
