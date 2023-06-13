@@ -1,1 +1,0 @@
-docker run --name mysql51 -e MYSQL_ROOT_PASSWORD=secret3! -p 33016:3306 --restart unless-stopped -d grugnog/mysql-5.1:latest
