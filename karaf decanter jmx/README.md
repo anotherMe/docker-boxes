@@ -29,9 +29,10 @@ docker-compose up -d
 
 ## Connect to JMX
 
-To connect from *VisualVM*, running on the same host of the docker container:
+To connect from *VisualVM*, running on the same host of the docker container, add a new JMX connection ( File / Add JMX connection ... ):
 
-`service:jmx:rmi://localhost:44444/jndi/rmi://localhost:1099/karaf-root`
+- set the *Connection* field to `service:jmx:rmi://localhost:44444/jndi/rmi://localhost:1099/karaf-root`
+- set *Security credentials* as specified in in the `org.apache.karaf.decanter.collector.jmx-camel.cfg` file.
 
 
 Refer to [Karaf manual](https://karaf.apache.org/manual/latest/#_monitoring_and_management_using_jmx)
