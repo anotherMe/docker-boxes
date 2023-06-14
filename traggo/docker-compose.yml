@@ -1,0 +1,16 @@
+
+version: "3.7"
+
+services:
+  traggo:
+    image: traggo/server:latest
+    restart: unless-stopped
+    ports:
+      - 3030:3030
+    environment:
+      TRAGGO_DEFAULT_USER_NAME: "admin"
+      TRAGGO_DEFAULT_USER_PASS: "s3cret!"
+    volumes:
+      - ./traggodata:/opt/traggo/data
+      
+      

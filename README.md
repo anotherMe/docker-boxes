@@ -6,6 +6,10 @@ My collection of **Dockerfile** and **docker-compose.yml** .
 
 cAdvisor container - Analyzes resource usage and performance characteristics of running containers.
 
+## focalboard
+
+[Focalboard](https://www.focalboard.com/) - Open source project management for technical teams
+
 ## kafka
 
 Kafka service also including services Zookeeper and [Kafdrop](https://github.com/obsidiandynamics/kafdrop)
@@ -30,9 +34,18 @@ Alpine based container with *PostgreSQL version 10*.
 
 *Tomcat 8.5* service with *PostgreSQL latest* service
 
+## traggo
+
+[Traggo](https://traggo.net/) - tag-based time tracking tool
+
+## wekan
+
+[Wekan](https://wekan.github.io/) Open source kanban
+
 ## wordpress
 
-*Wordpress* latest with *MySQL 5.7*
+*Wordpress latest* with *MySQL 5.7*
+
 
 ## MISC
 
@@ -44,10 +57,10 @@ Alpine based container with *PostgreSQL version 10*.
 
 `docker run --name mysql51 -e MYSQL_ROOT_PASSWORD=secret3! -p 3306:3306 --restart unless-stopped -d grugnog/mysql-5.1:latest`
 
-### Oracle in a Nutshell
+### Oracle in a Nutshell 11g
 
 `docker run -d -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true oracleinanutshell/oracle-xe-11g`
 
-### Karaf
+### Karaf latest
 
 `docker run -d -p 8101:8101 -p 1099:1099 -p 44444:44444 --name mykaraf apache/karaf:latest`
