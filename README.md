@@ -18,6 +18,13 @@ Kafka service also including services Zookeeper and [Kafdrop](https://github.com
 
 Same as the previous box but with **JMX** configured for remote access.
 
+## keycloak
+
+[Keycloak](https://www.keycloak.org/) adds authentication to applications and secures services with minimum effort.
+No need to deal with storing users or authenticating users.
+
+Keycloak provides user federation, strong authentication, user management, fine-grained authorization, and more.
+
 ## owncloud
 
 *Owncloud* container with separate *mariadb* and *redis* containers.
