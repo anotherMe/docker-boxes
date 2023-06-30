@@ -1,0 +1,20 @@
+
+version: '3'
+
+services:
+
+  sql-edge:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: living-on-the-edge
+    mem_reservation: 1GB
+    cap_add:
+      - SYS_PTRACE
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: Alphav1ll3!
+      MSSQL_PID: Developer      
+      #MSSQL_PID: Premium
+    ports:
+      - 1433:1433
+
+
