@@ -1,0 +1,30 @@
+version: '3'
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2.8.0
+    ports:
+      - 9200:9200
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+    environment:
+      - discovery.type=single-node
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:2.8.0
+    ports:
+      - 5601:5601
+    environment:
+      - OPENSEARCH_HOSTS=https://opensearch:9200
+
+  logstash:
+    image: opensearchproject/logstash-oss-with-opensearch-output-plugin:8.6.1
+    ports:
+      - 8989:4560
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    command: logstash -f /usr/share/logstash/pipeline/tcp_to_opensearch.conf
+    depends_on:
+      - opensearch
+
+volumes:
+  opensearch_data:
