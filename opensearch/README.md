@@ -41,6 +41,34 @@ curl -X GET "https://localhost:9200" -ku admin:admin
 
 By default, OpenSearch uses self-signed TLS certificates. The -k short option skips the certificate verification step so requests don't fail. The default username is `admin` and the default password is `admin`.
 
+To create an index named "pincopallino":
+
+```bash
+curl -X PUT "https://localhost:9200/pincopallino" -ku admin:admin
+```
+
+See [OpenSearch docs](https://opensearch.org/docs/1.0/opensearch/rest-api/create-index/) for reference
+
+
 ## OpenSearch Dashboards
 
 To connect to OpenSearch Dashboards, open [this link](http://localhost:5601). The default username is `admin` and the default password is `admin`.
+
+
+
+# No security
+
+The `docker-compose-no-security.yml` is for running OpenSearch on plain HTTP ( in stead of HTTPS ).
+
+( see [here](https://github.com/opensearch-project/OpenSearch/issues/1598) for reference )
+
+In the above file we added a new environment settings:
+
+```yaml
+    ...
+    - plugins.security.disabled=true
+    ...
+    ...
+    - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true
+    ...
+```
