@@ -53,6 +53,10 @@ Alpine based container with *PostgreSQL version 10*.
 
 [Traggo](https://traggo.net/) - tag-based time tracking tool
 
+## traefik
+
+[Traefik](https://doc.traefik.io/traefik/) - open-source edge router
+
 ## wekan
 
 [Wekan](https://wekan.github.io/) Open source kanban
