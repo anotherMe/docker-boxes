@@ -45,6 +45,11 @@ Alpine based container with *PostgreSQL version 10*.
 
 [Taiga](https://taiga.io/) is a project management platform for agile developers & designers and project managers who want a beautiful tool that makes work truly enjoyable.
 
+## technitium_dnsserver
+
+[Technitium DNS Server](https://technitium.com/dns/) - Self host a DNS server for privacy & security ( & more )
+
+
 ## tomcat85
 
 *Tomcat 8.5* service with *PostgreSQL latest* service
