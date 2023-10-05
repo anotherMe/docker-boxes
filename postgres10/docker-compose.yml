@@ -12,6 +12,8 @@ services:
             - POSTGRES_PASSWORD=pgpass
         ports:
             - 5432:5432
+        # Uncomment line below to enable statement logging
+        #command: ["postgres", "-c", "log_statement=all"]
 
 volumes:
     postgres_data:
