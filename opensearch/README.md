@@ -33,6 +33,9 @@ curl -XPUT -H "Content-Type: text/plain" -d 'INFO example message 09:06:23' http
 
 ## OpenSearch
 
+You can easily interact with OpenSearch API using *curl* ( or the web client integrated in the OpenSearch Dashboard ).
+
+
 To test the *opensearch* service:
 
 ```bash
