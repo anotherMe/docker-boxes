@@ -41,6 +41,11 @@ The [OpenSearch project](https://opensearch.org/about.html), created by Amazon, 
 
 Alpine based container with *PostgreSQL version 10*.
 
+## ember_sftp
+
+[Ember stack sftp ](https://github.com/emberstack/docker-sftp) - Docker image for hosting a SFTP server 
+
+
 ## taiga
 
 [Taiga](https://taiga.io/) is a project management platform for agile developers & designers and project managers who want a beautiful tool that makes work truly enjoyable.
