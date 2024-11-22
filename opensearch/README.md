@@ -75,3 +75,21 @@ In the above file we added a new environment settings:
     - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true
     ...
 ```
+
+# Data import / export with Elasticdump
+
+By using the [elasticsearch-dump](https://github.com/elasticsearch-dump/elasticsearch-dump) tool you can "quickly" backup and restore OpenSearch indexes.
+
+
+Backup example:
+
+```bash
+docker run --rm -ti -v /Users/myuser/share:/tmp elasticdump/elasticsearch-dump --input=http://host.internal.docker:9200/globalr --output=/tmp/globalr.json --type=data
+```
+
+
+Restore example:
+
+```bash
+docker run --rm -ti -v /Users/myuser/share:/tmp elasticdump/elasticsearch-dump --output=http://host.internal.docker:9200/globalr --input=/tmp/globalr.json --type=data
+```
