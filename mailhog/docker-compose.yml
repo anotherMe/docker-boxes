@@ -1,0 +1,10 @@
+
+services:
+
+  mailhog:
+    #image: mailhog/mailhog # Official MailHog image, does not support ARM architecture
+    image: jcalonso/mailhog # Using UNOFFICIAL MailHog image, supporting ARM architecture
+    container_name: eshare-mailhog
+    ports:
+      - "1025:1025"  # SMTP server port
+      - "8025:8025"  # Web UI port

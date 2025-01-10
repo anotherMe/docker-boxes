@@ -29,6 +29,11 @@ No need to deal with storing users or authenticating users.
 
 Keycloak provides user federation, strong authentication, user management, fine-grained authorization, and more.
 
+## mailhog
+
+[Mailhog](https://github.com/mailhog/MailHog) is an email testing tool for developers.
+
+
 ## opensearch
 
 The [OpenSearch project](https://opensearch.org/about.html), created by Amazon, is a forked search project based on old versions of Elasticsearch and Kibana.
