@@ -61,7 +61,7 @@ To connect to OpenSearch Dashboards, open [this link](http://localhost:5601). Th
 
 # No security
 
-The `docker-compose-no-security.yml` is for running OpenSearch on plain HTTP ( in stead of HTTPS ).
+The `docker-compose-no-security.yml` is for running OpenSearch on plain HTTP ( instead of HTTPS ).
 
 ( see [here](https://github.com/opensearch-project/OpenSearch/issues/1598) for reference )
 
