@@ -14,6 +14,10 @@ cAdvisor container - Analyzes resource usage and performance characteristics of 
 
 [Focalboard](https://www.focalboard.com/) - Open source project management for technical teams
 
+## homebox
+
+[Homebox](https://hay-kot.github.io/homebox/) is the inventory and organization system built for the Home User!
+
 ## kafka
 
 Kafka service also including services Zookeeper and [Kafdrop](https://github.com/obsidiandynamics/kafdrop)
@@ -28,6 +32,10 @@ Same as the previous box but with **JMX** configured for remote access.
 No need to deal with storing users or authenticating users.
 
 Keycloak provides user federation, strong authentication, user management, fine-grained authorization, and more.
+
+## koillection
+
+[Koillection](https://koillection.github.io/) - A self hosted website to manage all your collections
 
 ## mailhog
 
