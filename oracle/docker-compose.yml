@@ -9,14 +9,6 @@ services:
       ORACLE_PASSWORD: s3cr3t!  # Set the password for the SYS, SYSTEM and PDBADMIN users
       # APP_USER: bernie
       # APP_USER_PASSWORD: lomax
-    # # Customize healthcheck script options for startup
-    # healthcheck:
-    #   test: ["CMD", "healthcheck.sh"]
-    #   interval: 10s
-    #   timeout: 5s
-    #   retries: 10
-    #   start_period: 5s
-    #   start_interval: 5s
     # Mount a local SQL file to initialize your schema at startup
-    # volumes:
-    #   - my-init.sql:/container-entrypoint-initdb.d/my-init.sql:ro
+    volumes:
+      - ./db_initialization/init.sql:/container-entrypoint-initdb.d/my-init.sql:ro
